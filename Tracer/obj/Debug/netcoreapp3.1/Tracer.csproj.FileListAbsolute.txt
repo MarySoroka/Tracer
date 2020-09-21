@@ -1,0 +1,13 @@
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\bin\Debug\netcoreapp3.1\Tracer.exe
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\bin\Debug\netcoreapp3.1\Tracer.deps.json
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\bin\Debug\netcoreapp3.1\Tracer.runtimeconfig.json
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\bin\Debug\netcoreapp3.1\Tracer.runtimeconfig.dev.json
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\bin\Debug\netcoreapp3.1\Tracer.dll
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\bin\Debug\netcoreapp3.1\Tracer.pdb
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.csprojAssemblyReference.cache
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.AssemblyInfoInputs.cache
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.AssemblyInfo.cs
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.csproj.CoreCompileInputs.cache
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.dll
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.pdb
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.genruntimeconfig.cache
