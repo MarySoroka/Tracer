@@ -41,11 +41,13 @@ namespace TracerTests
             Assert.AreEqual(2, tracerResult.ConcurrentThead.Values.ToArray()[0].ThreadMethods.Count);
         }
         [TestMethod]
-        public void TracerTimeExecute_IsRight()
+        public void TracerNameAndClass_IsRight()
         {
             TracerTestMethod();
             var tracerResult = _tracer.GetTracerResult();
-            Assert.AreEqual("200", tracerResult.ConcurrentThead.ToArray()[0].Value.ThreadTime);
+            Assert.AreEqual("TracerTestMethod", tracerResult.ConcurrentThead.ToArray()[0].Value.ThreadMethods[0].MethodName);
+            Assert.AreEqual("TracerTest", tracerResult.ConcurrentThead.ToArray()[0].Value.ThreadMethods[0].ClassName);
+
         }
         [TestMethod]
         public void AmountOfTracerThreads_IsRight()
