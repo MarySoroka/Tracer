@@ -11,3 +11,6 @@ C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.csproj
 C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.dll
 C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.pdb
 C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.genruntimeconfig.cache
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\bin\Debug\netcoreapp3.1\TracerLibrary.dll
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\bin\Debug\netcoreapp3.1\TracerLibrary.pdb
+C:\Users\Maria\Documents\mpp\Tracer\Tracer\obj\Debug\netcoreapp3.1\Tracer.csproj.CopyComplete

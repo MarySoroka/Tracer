@@ -15,7 +15,11 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Maria\\Documents\\mpp\\TracerLibrary\\TracerLibrary.csproj": {
+            "projectPath": "C:\\Users\\Maria\\Documents\\mpp\\TracerLibrary\\TracerLibrary.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
