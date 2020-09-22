@@ -1,4 +1,5 @@
 using System.Collections.Concurrent;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -41,27 +42,30 @@ namespace TracerTests
             Assert.AreEqual(2, tracerResult.ConcurrentThead.Values.ToArray()[0].ThreadMethods.Count);
         }
         [TestMethod]
-        public void TracerNameAndClass_IsRight()
+        public void AmountOfTraceInnerMethods_IsRight()
         {
             TracerTestMethod();
             var tracerResult = _tracer.GetTracerResult();
-            Assert.AreEqual("TracerTestMethod", tracerResult.ConcurrentThead.ToArray()[0].Value.ThreadMethods[0].MethodName);
-            Assert.AreEqual("TracerTest", tracerResult.ConcurrentThead.ToArray()[0].Value.ThreadMethods[0].ClassName);
+            var tracerThread = tracerResult.ConcurrentThead.Values.ToArray()[0];
+            var threadMethod = tracerThread.ThreadMethods.ToArray()[0];
+            var internalMethods = threadMethod.InternalMethods;
+            var internalMethodsCount = internalMethods.Count;
+            Assert.AreEqual(1, internalMethodsCount);
+            var method = internalMethods.Take();
+            Assert.AreEqual("TracerTestInnerMethod",method.MethodName );
+            Assert.AreEqual("TracerTest", method.ClassName);
 
         }
         [TestMethod]
-        public void AmountOfTracerThreads_IsRight()
+        public void TracerNameAndClass_IsRight()
         {
-            _tracer.StartTrace();
-            for (var i = 0; i < 6; ++i)
-            {
-                var thread = new Thread(TracerTestMethod);
-                thread.Start();
-            }
-            _tracer.StopTrace();
-            var actualCountOfThreads = _tracer.GetTracerResult().ConcurrentThead.Count;
-            Assert.AreEqual(6, actualCountOfThreads);
+            TracerTestInnerMethod();
+            var tracerResult = _tracer.GetTracerResult();
+            Assert.AreEqual("TracerTestInnerMethod", tracerResult.ConcurrentThead.ToArray()[0].Value.ThreadMethods[0].MethodName);
+            Assert.AreEqual("TracerTest", tracerResult.ConcurrentThead.ToArray()[0].Value.ThreadMethods[0].ClassName);
+
         }
+       
 
     }
 }
