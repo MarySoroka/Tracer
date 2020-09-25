@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <thread time="335 ms" id="1">
+    <method>
+      <InternalMethods>
+        <ThreadMethod>
+          <InternalMethods />
+          <MethodName>ExampleInnerMethod</MethodName>
+          <ClassName>TracerExample</ClassName>
+          <ExecutionTime>113</ExecutionTime>
+        </ThreadMethod>
+        <ThreadMethod>
+          <InternalMethods />
+          <MethodName>ExampleInnerClassMethod</MethodName>
+          <ClassName>TraceExampleInner</ClassName>
+          <ExecutionTime>116</ExecutionTime>
+        </ThreadMethod>
+      </InternalMethods>
+      <MethodName>ExampleMethod</MethodName>
+      <ClassName>TracerExample</ClassName>
+      <ExecutionTime>335</ExecutionTime>
+    </method>
+  </thread>
+</root>

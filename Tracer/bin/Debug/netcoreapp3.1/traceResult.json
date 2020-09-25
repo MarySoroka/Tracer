@@ -1,0 +1,39 @@
+{
+  "threads": [
+    {
+      "_methodsStack": {
+        "_array": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "_size": 0,
+        "_version": 6
+      },
+      "_threadMethods": [
+        {
+          "name": "ExampleMethod",
+          "class": "TracerExample",
+          "time": "335",
+          "methods": [
+            {
+              "name": "ExampleInnerMethod",
+              "class": "TracerExample",
+              "time": "113",
+              "methods": [ ]
+            },
+            {
+              "name": "ExampleInnerClassMethod",
+              "class": "TraceExampleInner",
+              "time": "116",
+              "methods": [ ]
+            }
+          ]
+        }
+      ],
+      "_threadTime": "335",
+      "<Id>k__BackingField": 1
+    }
+  ]
+}

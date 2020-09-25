@@ -1,9 +1,10 @@
-﻿using TracerLibrary.tracer;
+﻿using System.IO;
+using TracerLibrary.tracer;
 
 namespace Tracer.serializer
 {
     public interface ISerializer
     {
-        string Serialize(TracerResult tracerResult);
+        void Serialize(TracerResult traceResult, Stream fileOutStream);
     }
 }

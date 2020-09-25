@@ -1,0 +1,29 @@
+{
+  "threads": [
+    {
+      "id": 1,
+      "time": "345 ms",
+      "methods": [
+        {
+          "name": "ExampleMethod",
+          "class": "TracerExample",
+          "time": "345",
+          "methods": [
+            {
+              "name": "ExampleInnerMethod",
+              "class": "TracerExample",
+              "time": "116",
+              "methods": [ ]
+            },
+            {
+              "name": "ExampleInnerClassMethod",
+              "class": "TraceExampleInner",
+              "time": "107",
+              "methods": [ ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
