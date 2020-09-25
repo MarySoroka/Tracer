@@ -3,7 +3,7 @@ using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TracerLibrary.tracer;
 
-namespace TracerTests
+namespace TracerTests.tests
 {
     [TestClass]
     public class TracerTest
